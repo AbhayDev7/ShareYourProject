@@ -59,7 +59,7 @@ ROOT_URLCONF = 'shareYourProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['producthunt/templates'],
+        'DIRS': ['shareYourProject/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
