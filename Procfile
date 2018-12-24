@@ -1,1 +1,1 @@
-web: gunicorn share-your-project.wsgi --log-file -
+web: gunicorn share-your-project.wsgi
