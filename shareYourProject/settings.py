@@ -106,6 +106,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.github.GithubOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
+
+    'django.contrib.auth.backends.ModelBackend', #for user to log in with username and password
+)
+
+
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 LOGIN_REDIRECT_URL = 'home'
@@ -128,9 +136,6 @@ SOCIAL_AUTH_GITHUB_SECRET = 'c5b4db7958419b9807490522928a6f8f5bbb2332'
 
 SOCIAL_AUTH_TWITTER_KEY = 'z5pKwugNqU3YPP5ngi6PVODvM'
 SOCIAL_AUTH_TWITTER_SECRET = 'JYjFdGQCf4am1I1w6fMXbF4JggdwcfMg2sp9pnWLakMGmlczQp'
-
-SOCIAL_AUTH_FACEBOOK_KEY = '237740120158044'
-SOCIAL_AUTH_FACEBOOK_SECRET = '522a688dc2fc8f87f8bf314b1218d3e6'
 
 
 # Static files (CSS, JavaScript, Images)
