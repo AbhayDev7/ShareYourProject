@@ -137,7 +137,7 @@ SOCIAL_AUTH_FACEBOOK_SECRET = '522a688dc2fc8f87f8bf314b1218d3e6'
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'producthunt/static')
+    os.path.join(BASE_DIR,'shareYourProject/static')
 ]
 
 STATIC_ROOT=os.path.join(BASE_DIR,'static')
