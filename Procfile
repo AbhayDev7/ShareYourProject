@@ -1,1 +1,1 @@
-web: gunicorn share-your-project.wsgi
+web: gunicorn app.wsgi --pythonpath app --log-file - 
